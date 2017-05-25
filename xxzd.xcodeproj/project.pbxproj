@@ -13,6 +13,7 @@
 		0BF0026C1ED7526600DC4056 /* xxzd.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0BF0026A1ED7526600DC4056 /* xxzd.xcdatamodeld */; };
 		0BF0026E1ED7526600DC4056 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0BF0026D1ED7526600DC4056 /* Assets.xcassets */; };
 		0BF002711ED7526600DC4056 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BF0026F1ED7526600DC4056 /* LaunchScreen.storyboard */; };
+		0BF0027A1ED753EA00DC4056 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BF002791ED753EA00DC4056 /* StoreKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,8 @@
 		0BF0026D1ED7526600DC4056 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0BF002701ED7526600DC4056 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0BF002721ED7526600DC4056 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0BF002791ED753EA00DC4056 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		0BF0027B1ED753EE00DC4056 /* xxzd.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = xxzd.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0BF0027A1ED753EA00DC4056 /* StoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +46,7 @@
 			children = (
 				0BF002621ED7526600DC4056 /* xxzd */,
 				0BF002611ED7526600DC4056 /* Products */,
+				0BF002781ED753EA00DC4056 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +61,7 @@
 		0BF002621ED7526600DC4056 /* xxzd */ = {
 			isa = PBXGroup;
 			children = (
+				0BF0027B1ED753EE00DC4056 /* xxzd.entitlements */,
 				0BF002631ED7526600DC4056 /* AppDelegate.swift */,
 				0BF002651ED7526600DC4056 /* ViewController.swift */,
 				0BF002671ED7526600DC4056 /* Main.storyboard */,
@@ -65,6 +71,14 @@
 				0BF0026A1ED7526600DC4056 /* xxzd.xcdatamodeld */,
 			);
 			path = xxzd;
+			sourceTree = "<group>";
+		};
+		0BF002781ED753EA00DC4056 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0BF002791ED753EA00DC4056 /* StoreKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -101,6 +115,14 @@
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = ZNVH9D6AWM;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.InAppPurchase = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -267,6 +289,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = xxzd/xxzd.entitlements;
 				DEVELOPMENT_TEAM = ZNVH9D6AWM;
 				INFOPLIST_FILE = xxzd/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -280,6 +303,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = xxzd/xxzd.entitlements;
 				DEVELOPMENT_TEAM = ZNVH9D6AWM;
 				INFOPLIST_FILE = xxzd/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -308,6 +332,7 @@
 				0BF002771ED7526600DC4056 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
