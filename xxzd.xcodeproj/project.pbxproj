@@ -14,6 +14,11 @@
 		0BF0026E1ED7526600DC4056 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0BF0026D1ED7526600DC4056 /* Assets.xcassets */; };
 		0BF002711ED7526600DC4056 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BF0026F1ED7526600DC4056 /* LaunchScreen.storyboard */; };
 		0BF0027A1ED753EA00DC4056 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BF002791ED753EA00DC4056 /* StoreKit.framework */; };
+		0BF0027D1ED7DEDE00DC4056 /* TipsSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF0027C1ED7DEDE00DC4056 /* TipsSwift.swift */; };
+		0BF002831ED7DEE500DC4056 /* INSDataStackContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF0027F1ED7DEE500DC4056 /* INSDataStackContainer.swift */; };
+		0BF002841ED7DEE500DC4056 /* INSPersistentContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF002801ED7DEE500DC4056 /* INSPersistentContainer.swift */; };
+		0BF002851ED7DEE500DC4056 /* INSPersistentStoreDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF002811ED7DEE500DC4056 /* INSPersistentStoreDescription.swift */; };
+		0BF002861ED7DEE500DC4056 /* NSManagedObjectContext+iOS10Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF002821ED7DEE500DC4056 /* NSManagedObjectContext+iOS10Additions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +32,11 @@
 		0BF002721ED7526600DC4056 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0BF002791ED753EA00DC4056 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		0BF0027B1ED753EE00DC4056 /* xxzd.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = xxzd.entitlements; sourceTree = "<group>"; };
+		0BF0027C1ED7DEDE00DC4056 /* TipsSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TipsSwift.swift; sourceTree = "<group>"; };
+		0BF0027F1ED7DEE500DC4056 /* INSDataStackContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = INSDataStackContainer.swift; sourceTree = "<group>"; };
+		0BF002801ED7DEE500DC4056 /* INSPersistentContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = INSPersistentContainer.swift; sourceTree = "<group>"; };
+		0BF002811ED7DEE500DC4056 /* INSPersistentStoreDescription.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = INSPersistentStoreDescription.swift; sourceTree = "<group>"; };
+		0BF002821ED7DEE500DC4056 /* NSManagedObjectContext+iOS10Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSManagedObjectContext+iOS10Additions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +71,8 @@
 		0BF002621ED7526600DC4056 /* xxzd */ = {
 			isa = PBXGroup;
 			children = (
+				0BF0027E1ED7DEE500DC4056 /* INSPersistentContainer */,
+				0BF0027C1ED7DEDE00DC4056 /* TipsSwift.swift */,
 				0BF0027B1ED753EE00DC4056 /* xxzd.entitlements */,
 				0BF002631ED7526600DC4056 /* AppDelegate.swift */,
 				0BF002651ED7526600DC4056 /* ViewController.swift */,
@@ -79,6 +91,17 @@
 				0BF002791ED753EA00DC4056 /* StoreKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0BF0027E1ED7DEE500DC4056 /* INSPersistentContainer */ = {
+			isa = PBXGroup;
+			children = (
+				0BF0027F1ED7DEE500DC4056 /* INSDataStackContainer.swift */,
+				0BF002801ED7DEE500DC4056 /* INSPersistentContainer.swift */,
+				0BF002811ED7DEE500DC4056 /* INSPersistentStoreDescription.swift */,
+				0BF002821ED7DEE500DC4056 /* NSManagedObjectContext+iOS10Additions.swift */,
+			);
+			path = INSPersistentContainer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,8 +186,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				0BF002661ED7526600DC4056 /* ViewController.swift in Sources */,
+				0BF002841ED7DEE500DC4056 /* INSPersistentContainer.swift in Sources */,
 				0BF002641ED7526600DC4056 /* AppDelegate.swift in Sources */,
 				0BF0026C1ED7526600DC4056 /* xxzd.xcdatamodeld in Sources */,
+				0BF0027D1ED7DEDE00DC4056 /* TipsSwift.swift in Sources */,
+				0BF002851ED7DEE500DC4056 /* INSPersistentStoreDescription.swift in Sources */,
+				0BF002861ED7DEE500DC4056 /* NSManagedObjectContext+iOS10Additions.swift in Sources */,
+				0BF002831ED7DEE500DC4056 /* INSDataStackContainer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,6 +320,7 @@
 				CODE_SIGN_ENTITLEMENTS = xxzd/xxzd.entitlements;
 				DEVELOPMENT_TEAM = ZNVH9D6AWM;
 				INFOPLIST_FILE = xxzd/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xigk.xxzd;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -306,6 +335,7 @@
 				CODE_SIGN_ENTITLEMENTS = xxzd/xxzd.entitlements;
 				DEVELOPMENT_TEAM = ZNVH9D6AWM;
 				INFOPLIST_FILE = xxzd/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xigk.xxzd;
 				PRODUCT_NAME = "$(TARGET_NAME)";
